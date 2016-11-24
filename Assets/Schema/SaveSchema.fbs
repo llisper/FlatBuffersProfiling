@@ -1,0 +1,39 @@
+// example save file
+
+namespace CompanyNamespaceWhatever;
+
+enum Color : byte { Red = 1, Green, Blue }
+
+union WeaponClassesOrWhatever { Sword, Gun, Rocket }
+
+struct Vec3 {
+  x:float;
+  y:float;
+  z:float;
+}
+
+table GameDataWhatever {
+  pos:Vec3;
+  mana:short = 150;
+  hp:short = 100;
+  name:string;
+  inventory:[ubyte];
+  color:Color = Blue;
+  weapon:WeaponClassesOrWhatever;
+}
+
+table Sword {
+  damage:int = 10;
+  distance:short = 5;
+}
+
+table Gun {
+  damage:int = 500;
+  reloadspeed:short = 2;
+}
+
+table Rocket {
+    damage:int = 600;
+}
+
+root_type GameDataWhatever;

@@ -1,0 +1,25 @@
+namespace Profile;
+
+enum PhoneType : byte {
+    MOBILE = 0,
+    HOME,
+    WORK
+}
+
+table PhoneNumber {
+    number:string;
+    type:PhoneType = MOBILE;
+}
+
+table Person {
+    name:string;
+    id:int;
+    email:string;
+    phones:[PhoneNumber]; 
+}
+
+table AddressBook {
+    people:[Person];
+}
+
+root_type AddressBook;
