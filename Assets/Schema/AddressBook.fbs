@@ -1,4 +1,4 @@
-namespace Profile;
+namespace FlatBuffers_Profile;
 
 enum PhoneType : byte {
     MOBILE = 0,

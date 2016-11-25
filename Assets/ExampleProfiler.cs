@@ -4,7 +4,7 @@ using System.IO;
 using FlatBuffers;
 using CompanyNamespaceWhatever;
 
-public class Profiler : MonoBehaviour
+public class ExampleProfiler : MonoBehaviour
 {
     #region inspector
     public enum Ptype
