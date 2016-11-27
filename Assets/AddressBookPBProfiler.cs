@@ -30,6 +30,7 @@ public class AddressBookPBProfiler : MonoBehaviour
     void Awake()
     {
         instance = this;
+        BufferPoolEx.EnsureCapacity(16);
     }
 
     void Update()
@@ -65,8 +66,9 @@ public class AddressBookPBProfiler : MonoBehaviour
         }
         MemoryStream stream = mStreams[i];
         stream.Position = 0;
-        ProtoWriter writer = mWriters[i];
-        mSerializer.Serialize(writer, ab);
+        // ProtoWriter writer = mWriters[i];
+        // mSerializer.Serialize(writer, ab);
+        mSerializer.Serialize(stream, ab);
     }
 
     void PB_Deserialize(int i)

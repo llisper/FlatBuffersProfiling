@@ -9,26 +9,6 @@
             Defines the rules for a precompilation operation
             </summary>
         </member>
-        <member name="M:ProtoBuf.Precompile.PreCompileContext.#ctor">
-            <summary>
-            Create a new instance of PreCompileContext
-            </summary>
-        </member>
-        <member name="M:ProtoBuf.Precompile.PreCompileContext.SanityCheck">
-            <summary>
-            Check the context for obvious errrs
-            </summary>
-        </member>
-        <member name="M:ProtoBuf.Precompile.PreCompileContext.Execute">
-            <summary>
-            Perform the precompilation operation
-            </summary>
-        </member>
-        <member name="M:ProtoBuf.Precompile.PreCompileContext.GetUsage">
-            <summary>
-            Return the syntax guide for the utility
-            </summary>
-        </member>
         <member name="P:ProtoBuf.Precompile.PreCompileContext.Framework">
             <summary>
             The target framework to use
@@ -77,6 +57,26 @@
         <member name="P:ProtoBuf.Precompile.PreCompileContext.PublicKey">
             <summary>
             The public key (in hexadecimal) to use to sign the assembly
+            </summary>
+        </member>
+        <member name="M:ProtoBuf.Precompile.PreCompileContext.#ctor">
+            <summary>
+            Create a new instance of PreCompileContext
+            </summary>
+        </member>
+        <member name="M:ProtoBuf.Precompile.PreCompileContext.SanityCheck">
+            <summary>
+            Check the context for obvious errrs
+            </summary>
+        </member>
+        <member name="M:ProtoBuf.Precompile.PreCompileContext.Execute">
+            <summary>
+            Perform the precompilation operation
+            </summary>
+        </member>
+        <member name="M:ProtoBuf.Precompile.PreCompileContext.GetUsage">
+            <summary>
+            Return the syntax guide for the utility
             </summary>
         </member>
         <member name="T:ProtoBuf.Precompile.CommandLineAttribute">
